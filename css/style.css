@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap");
+body {
+  font-family: "Azeret Mono", monospace;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  justify-content: space-around;
+  margin-top: 5vw;
+}
+.container_start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container button {
+  font-family: "Azeret Mono", monospace;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: #17d5b9;
+  color: whitesmoke;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 0.75em;
+}
+.container button.button {
+  padding: 1.25em 2em;
+  line-height: 1.5;
+  border: 2px solid #00AD93;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container button.button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00BEA2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #00AD93, 0 0.625em 0 0 #17d5b9;
+  transform: translate3d(0, 0.75em, -1em);
+}
+.container button.button:hover {
+  background: #00d1b2;
+  transform: translate(0em, 0.25em);
+}
+.container button.button:hover::before {
+  box-shadow: 0 0 0 2px #00AD93, 0 0.5em 0 0 #17d5b9;
+  transform: translate3d(0, 0.5em, -2em);
+}
+.container button.button:active {
+  background: #00d1b2;
+  transform: translate(0em, 0.75em);
+}
+.container button.button:active::before {
+  box-shadow: 0 0 0 2px #00AD93, 0 0.25em 0 0 #17d5b9;
+  transform: translate3d(0, 0.25em, -1em);
+}
+.container_questions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container_questions .choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_questions .choices button {
+  width: fit-content;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+.container .feedback {
+  width: fit-content;
+  padding: 0.5em 0.25em;
+  border-radius: 0.25em;
+  color: whitesmoke;
+  font-size: 2.5em;
+}
+.container_end {
+  flex-direction: column;
+  align-items: center;
+}
+
+.highscores {
+  width: 20vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+
+.scores {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  cursor: pointer;
+}
+
+.timer {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+
+/*# sourceMappingURL=style.css.map */

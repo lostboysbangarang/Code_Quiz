@@ -1,0 +1,19 @@
+{
+  "name": "code_quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostboysbangarang/Code_Quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostboysbangarang/Code_Quiz/issues"
+  },
+  "homepage": "https://github.com/lostboysbangarang/Code_Quiz#readme"
+}

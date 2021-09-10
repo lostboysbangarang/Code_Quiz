@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="scores"><a class="VHS" onclick="vHS($('.highscores'))">View Highscores</a></div>
+    <div class="timer">Time: <span class="time">0</span></div>
+
+    <div class="container">
+        <div class="container_start start_screen">
+          <h1>Coding Quiz Challenge</h1>
+          <p>
+            Try to answer the code-related questions within the given time limit. Keep in mind that wrong answers will decuct from the available time by 10 seconds.
+          </p>
+          <button onclick="startQuiz()" class="button button_start">Start Quiz</button>
+      </div>
+      <div class="container_questions">
+          <h2 class="question_title"></h2>
+          <div class="choices"></div>
+      </div>
+      <div class="container_end">
+          <h2>You have completed your task.</h2>
+          <p>Your final score is: <span class="scoreFin"></span>.</p>
+          <p>
+            Enter initals: <input type="text" class="initials" max="3">
+            <button onclick="saveScore()" class="button button_submit">Submit</button>
+          </p>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="highscores">
+      <thead class="head">
+        <th>User</th>
+        <th>Score</th>
+      </thead>
+      <div class="appendThis">
+        <td class = "content is-medium year"></td> 
+        <td class = "content is-medium genre"></td>
+      </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="./js/variables.js"></script>
+<script src="./js/scripts.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</html>
